@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding javaScript with HTML </title>
+</head>
+<body>
+    <h1>Embedding javaScript with HTML </h1>
+    <p>this is an example of how to embed Embedding javaScript with HTML document</p>
+    <span id="message"> </span>
+    <span id="calculate"></span>
+    <ul id="dataList"></ul>
+    <script>
+        console.log("Hello, this is a message from the javascript code embedded in the html document");
+        const messageElement = document.getElementById("message");
+        messageElement.textContent = "this message is displayrd using javaScript!";
+        
+        const  markedPrice = 152.25;
+        const  discount = 0.15;
+        const  vatAmount = markedPrice * 0.05;
+        const discountAmount = markedPrice * discount;
+        const finalPrice = markedPrice - discountAmount + vatAmount;
+        console.log("Final price after discount and VAT:" + finalPrice.toFixed(2));
+        
+    const calculateElement = document.getElementById("calculate");
+       calculateElement.textContent = "Final price after discount and VAT:" + finalPrice.toFixed(4);
+        
+    </script>
+    <script src="data.js"></script>
+</body>
+</html>
