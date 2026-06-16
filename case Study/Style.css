@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #810838;
+    --secondary-color: #f1e201;
+     --second-color: #ff0202;
+    --accent-color: #541a1a;
+    --background-color: #dcc3aa;
+    --primary-font: 'popplies', sans-serif;
+    --secondary-font: 'pooppies', sans-serif;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+h1{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p{
+    font-family: var(--secondary-font);
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    margin: 1rem auto;
+    padding: 1rem;
+    box-shadow: 1px 3px 8px solid var(--accent-color);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+}
+
+button{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+ul{
+    width: 50%;
+}
+ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid var(--accent-color);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    font-family: var(--primary-font);
+    font-weight: 500;
+}
+
+li button{
+    background-color: transparent;
+    border: none;
+    color: var(--accent-color);
+    font-size: 1rem;
+    cursor: pointer;
+    width: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li button:hover{
+    color: var(--second-color);
+}
